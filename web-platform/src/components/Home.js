@@ -3,9 +3,10 @@
  * @Date:   2017-11-10T03:40:13+01:00
  * @Project: PL Meetup Application
  * @Last modified by:   DanCarl857
- * @Last modified time: 2017-11-10T03:43:37+01:00
+ * @Last modified time: 2017-11-10T04:52:24+01:00
  */
- import React, { Component } from 'react'
+ import React, { Component } from 'react';
+ import { Link } from 'react-router-dom';
  import {
    Button,
    Container,
@@ -18,7 +19,7 @@
    Menu,
    Segment,
    Visibility,
- } from 'semantic-ui-react'
+ } from 'semantic-ui-react';
 
  const FixedMenu = () => (
    <Menu fixed='top' size='large'>
@@ -70,8 +71,12 @@
                  <Menu.Item as='a'>Company</Menu.Item>
                  <Menu.Item as='a'>Careers</Menu.Item>
                  <Menu.Item position='right'>
-                   <Button as='a' inverted>Log in</Button>
-                   <Button as='a' inverted style={{ marginLeft: '0.5em' }}>Sign Up</Button>
+                   <Link to="/login">
+                    <Button as='a' inverted>Log in</Button>
+                   </Link>
+                   <Link to="/signup">
+                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}>Sign Up</Button>
+                   </Link>
                  </Menu.Item>
                </Menu>
              </Container>
@@ -159,7 +164,7 @@
                horizontal
                style={{ margin: '3em 0em', textTransform: 'uppercase' }}
              >
-               <a href='#'>Case Studies</a>
+               <a href=''>Case Studies</a>
              </Divider>
              <Header as='h3' style={{ fontSize: '2em' }}>Did We Tell You About Our Bananas?</Header>
              <p style={{ fontSize: '1.33em' }}>
