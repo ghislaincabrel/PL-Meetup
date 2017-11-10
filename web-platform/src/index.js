@@ -1,8 +1,18 @@
+/**
+ * @Author: Daniel Carlson <DanCarl857>
+ * @Date:   2017-11-10T03:26:10+01:00
+ * @Project: PL Meetup Application
+ * @Last modified by:   DanCarl857
+ * @Last modified time: 2017-11-10T03:37:40+01:00
+ */
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// Styles - Semanti UI
+import 'semantic-ui-css/semantic.min.css';
+
+// Components
+import Root from './Root';
+
+// Render Application
+render(<Root />, document.getElementById('root'));
