@@ -1,0 +1,5 @@
+import angular2 from './image/angular2.jpeg'
+import pwa from './image/pwa.png'
+import java from './image/java.jpeg'
+import node from './image/node.png'
+import dev from './image/dev.jpeg'
